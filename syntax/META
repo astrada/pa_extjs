@@ -1,0 +1,10 @@
+# OASIS_START
+# DO NOT EDIT (digest: de726c292924cacaa5eef118db57fa20)
+version = "0.1"
+description = "Syntactic sugar for ocaml-extjs"
+requires = "camlp4"
+archive(syntax, preprocessor) = "pa_extjs.cma"
+archive(syntax, toploop) = "pa_extjs.cma"
+exists_if = "pa_extjs.cma"
+# OASIS_STOP
+

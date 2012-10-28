@@ -1,0 +1,23 @@
+<**/*.ml>: syntax_camlp4o
+
+# OASIS_START
+# DO NOT EDIT (digest: 66f0b81bebcb2bf6d83c5e990a7eb007)
+# Ignore VCS directories, you can use the same kind of rule outside 
+# OASIS_START/STOP if you want to exclude directories that contains 
+# useless stuff for the build process
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library pa_extjs
+"syntax/pa_extjs.cmxs": use_pa_extjs
+<syntax/*.ml{,i}>: pkg_camlp4
+<syntax/*.ml{,i}>: pkg_camlp4.quotations
+<syntax/*.ml{,i}>: pkg_camlp4.extend
+# OASIS_STOP
